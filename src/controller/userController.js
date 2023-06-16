@@ -21,7 +21,7 @@ router.get("/fetch/:id",async (req,resp)=>{
  
  router.post("/add", async (req,resp)=>{    //    http operations : adding new data ( POST ), fetching data ( GET ), update some data ( PUT ) , delete data ( DELETE )
      try{
-         console.log("Control is here: POST")
+         console.log("Control is here: POSSST")
          console.log("Request body ",req.body)
          let savedUser = await userService.createUser(req.body)
          resp.json(savedUser)
